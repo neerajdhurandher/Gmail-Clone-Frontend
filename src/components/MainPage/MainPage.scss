@@ -1,0 +1,30 @@
+@import '../../App.scss';
+
+.main-container{
+    background-color: $bg-color;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 15% auto 5%;
+    column-gap: 0.5%;
+}
+
+.left-coloum{
+    background-color: $bg-color;
+
+}
+.center-coloum{
+    background-color: $bg-color;
+}
+.right-coloum{
+    border-left: 2px solid $light-grey;
+    background-color: $bg-color;
+
+}
+@media screen and (max-width: 900px) {
+    .right-coloum{
+        display: none;
+    }
+    .main-container{
+        grid-template-columns: 10% auto;
+    }
+}

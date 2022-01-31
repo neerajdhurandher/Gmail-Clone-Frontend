@@ -1,0 +1,75 @@
+@import '../../App.scss';
+
+.main-div-center{
+    border-radius: 10px;
+    background-color: $bg-color;
+}
+
+.top-options-bar-div{
+    display: flex;
+    // position: static;
+    width: 100%;
+    color: $white-color;
+    background-color: $light-grey;
+}
+.mail-list-div{
+    height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.mail-type-div{
+    width: 100%;
+    cursor: pointer;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: $bg-color;
+}
+
+.mail-type-div-item{
+    width: 25%;
+    margin-right: 2%;
+    display: inline-block;
+}
+.mail-type-title{
+    font-size: 1.4rem;
+}
+.mail-type-item-icon{
+    font-size: 1.5rem;
+    margin: 5%;
+}
+
+.primary{
+    .new-block{
+        background-color: $primary-red;
+    }
+    color: $primary-red;
+    border-bottom: 5px solid $primary-red;
+}
+
+.social{
+    .new-block{
+        background-color: $social-blue;
+    }
+    color: $social-blue;
+    border-bottom: 5px solid $social-blue;
+}
+
+.promotion{
+    .new-block{
+        background-color: $promotion-green;
+    }
+    color: $promotion-green;
+    border-bottom: 5px solid $promotion-green;
+}
+
+.new-block{
+    color: $white-color;
+    padding: 1%;
+    margin: 5%;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+// .mail-list{
+//     height: 100vh;
+// }

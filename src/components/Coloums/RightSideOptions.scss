@@ -1,0 +1,24 @@
+@import '../../App.scss';
+
+.main-div-right{
+    height: 88vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    padding: 5%;
+    gap: 4%;
+    flex-direction: column;
+    align-items: center;
+    color: $white-color;
+    cursor: pointer;
+
+    img{
+        padding: 6%;
+        border-radius: 50%;
+    }
+    
+    img:hover{
+        background-color: $mail-model-hover-bg;
+    }
+}
+

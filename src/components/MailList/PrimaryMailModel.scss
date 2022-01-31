@@ -1,0 +1,123 @@
+@import '../../App.scss';
+.main-div{
+    width: 100%;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    background-color: $mail-model-bg;
+    color: $icon-color-point;
+
+}
+
+.left-icon-hover{
+    opacity: 0;
+}
+
+.right-icons-hover{
+    display:flex;
+    opacity: 0;
+    right: 0;
+    top: 30%;
+    position: absolute;
+    align-items:center;
+    padding-right: 1%;
+    column-gap: 20px;
+    z-index: 8;
+    justify-content: center;
+    background-color: $mail-model-hover-bg;
+}
+.mail-model-main-div{
+    // position: relative;
+    display: grid;
+    grid-template-columns: 8% 20% 60% 10% ;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+
+}
+.normal-mail-bg{
+    border: 2px solid $mail-model-bg;
+}
+.selected-mail-bg{
+    border: 2px solid $light-grey;
+    background-color: $mail-model-hover-bg;
+}
+
+.left-icons{
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: center;
+}
+.right-icons{
+    display: flex;
+    top: 30%;
+    align-items: center;
+    justify-items: center;
+}
+
+.mail-sender{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    padding-left: 2%;
+    margin-right: 2%;
+    font-size: 1rem;
+    justify-content: center;
+    color: $normal-text-color;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    h4{
+        display: inline-block;
+    }
+}
+
+.mail-description{
+    width: 95%;
+    font-size: 0.9rem;
+    justify-content: center;
+    color: $normal-text-color;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.date-time-span{
+    font-size: 0.9em;
+    color: $icon-color-point;
+}
+
+.new-mail-sec{
+    height: 30%;
+    padding: 0.5%;
+    font-size: 0.9rem;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 72%;
+    border-radius: 10px;
+    color: $white-color;
+    background-color: rgb(236, 18, 18);
+}
+
+.main-div:hover{
+    border: 2px solid $light-grey;
+    background-color: $mail-model-hover-bg;
+    
+    .left-icon-hover{
+        opacity: 1;
+    }
+    .right-icons-hover{
+        // display: flex;
+        opacity: 1;
+    }
+
+    .mail-model-main-div{
+
+        .date-time-span{
+            opacity: 0;
+        }
+    }
+}
+
